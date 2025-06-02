@@ -20,7 +20,7 @@ void cria_grafo(int ponderado, int num_vertices, int max_grau)
     gr->num_vertices = num_vertices;
     gr->max_grau = max_grau;
     gr->grau = (int *)calloc(num_vertices, sizeof(int));
-    gr->arestas = (int **)malloc(num_vertices * sizeof(int *));
+    gr->arestas = (int **)malloc(num_vertices * sizeof(int));
     for (int i = 0; i < num_vertices; i++)
     {
         gr->arestas[i] = (int *)malloc(max_grau * (sizeof(int *)));
